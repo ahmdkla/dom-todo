@@ -1,0 +1,166 @@
+html,
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.todoList {
+    padding: 80px 80px;
+}
+
+.todoList .container {
+    display: flex;
+}
+
+.todoList .left {
+    width: 50%;
+    padding: 10px;
+}
+
+.todoList .right {
+    border-radius: 5%;
+    flex: 1;
+    text-align: right;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.todoList .right .word>* {
+    position: relative;
+}
+
+.todoList {
+    font-size: 1.1em;
+
+}
+
+.todoList ul li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.todoList ul li::before {
+    width: 10px;
+    height: 10px;
+    background: black;
+    transform: rotate(45deg);
+    left: 0px;
+    top: 5px;
+    position: absolute;
+}
+
+
+#list {
+    padding: 10px;
+}
+
+.left li {
+    border: 1px solid black;
+    border-radius: 10px;
+    cursor: grabbing;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.right li {
+    content: '';
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: grabbing;
+    margin: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    text-decoration: line-through;
+    text-align: left;
+}
+
+.right li::before {
+    content: '✓';
+    display: inline-block;
+    margin-right: 10px;
+}
+
+input {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.create {
+    background: white;
+    padding: 5px 10px;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+.create:hover {
+    background: blue;
+    color: white;
+    transition: 0.3s;
+}
+
+.update {
+    background: white;
+    padding: 5px 10px;
+    border: 2px solid green;
+    cursor: pointer;
+}
+.update:hover {
+    background: green;
+    color: white;
+    transition: 0.3s;
+}
+
+.delete {
+    background: white;
+    padding: 5px 10px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+.delete:hover {
+    background: red;
+    color: white;
+    transition: 0.3s;
+}
+
+.console{
+    background: white;
+    padding: 5px 10px;
+    border: 2px solid black;
+    width: 180px;
+    cursor: pointer;
+}
+.console:hover{
+    background: black;
+    color: white;
+    transition: 0.2s;
+}
+
+.word{
+    display: flex;
+}
+
+.word img{
+    width: 68px;
+    height: 68px;
+    filter: invert(100%);
+    margin: 0px 60px;
+}
+
+.word p{
+    flex: 1;
+}
+
